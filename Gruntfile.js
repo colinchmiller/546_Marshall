@@ -29,6 +29,12 @@ module.exports = function(grunt){
                 src: 'stylesheet.css',
                 dest: 'server/public/assets/styles'
             },
+            cssNormalize: {
+                expand: true,
+                cwd: 'node_modules',
+                src: 'normalize.css/normalize.css',
+                dest: 'server/public/vendors'
+            },
             angular: {
                 expand: true,
                 cwd: 'node_modules',

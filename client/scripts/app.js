@@ -21,6 +21,9 @@ mainApp.config(['$routeProvider', function($routeProvider){
           when('/contact', {
             templateUrl: 'assets/views/routes/contact.html',
             controller: 'ContactController'
+          }).
+          otherwise({
+            redirectTo: 'home'
           })
 }]);
 
