@@ -24,11 +24,6 @@ mainApp.config(['$routeProvider', function($routeProvider){
           })
 }]);
 
-mainApp.controller('testController', ['$scope', function($scope){
-  console.log("testController firing!");
-  $scope.test = "This is a test section!";
-}]);
-
 mainApp.controller('HomeController', ['$scope', function($scope){
   console.log("HomeController firing!");
   $scope.test = "This is the Home Page";
