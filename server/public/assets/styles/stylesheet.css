@@ -1,6 +1,9 @@
 header{
   margin: 0 20px 0 20px;
 }
+header h1{
+  font-size: 50px;
+}
 nav {
   background-color: #A6845B;
   padding: 10px;
