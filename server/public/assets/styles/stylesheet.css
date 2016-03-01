@@ -3,6 +3,8 @@ header{
 }
 header h1{
   font-size: 50px;
+  /*default/normalize likely affecting it's lining up with the nave links*/
+  margin-left: 55px;
 }
 nav {
   background-color: #A6845B;
@@ -26,4 +28,7 @@ nav a:hover{
 .wrapper{
   width: auto;
   margin: 0 20px 0 20px;
+}
+body{
+  background-image: url("https://c1.staticflickr.com/7/6223/6270765696_9aa3fa2a83_b.jpg");
 }
