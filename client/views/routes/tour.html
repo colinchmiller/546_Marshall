@@ -2,10 +2,18 @@
 
 <h2>Pictures of the House</h2>
 
-<ul class="carousel">
-  <li ng-repeat="slide in slides">
-    <img ng-src="{{slide.image}}"/>
-  </li>
-</ul>
+<div id="slides_control">
+  <div>
+    <carousel interval="myInterval">
+      <slide ng-repeat="slide in slides" active="slide.active">
+        <img ng-src="{{slide.image}}">
+        <div class="carousel-caption">
+          <p>Test</p>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+</div>
+
 
 <h2>Floorplans</h2>

@@ -1,4 +1,4 @@
-var mainApp = angular.module('mainApp', ['ngRoute']);
+var mainApp = angular.module('mainApp', ['ngRoute', 'ui.bootstrap']);
 
 mainApp.config(['$routeProvider', function($routeProvider){
       $routeProvider.
@@ -45,6 +45,7 @@ mainApp.controller('ArchitectController', ['$scope', function($scope){
 
 mainApp.controller('TourController', ['$scope', function($scope){
   console.log("TourController is firing!");
+  $scope.myInterval = 3000;
   $scope.slides = [
     {image: "https://www.fillmurray.com/200/300"},
     {image: "https://www.fillmurray.com/200/300"},
