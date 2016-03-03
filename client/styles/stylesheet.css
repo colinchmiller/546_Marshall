@@ -1,9 +1,8 @@
 header{
   margin: 0 20px 0 20px;
 }
-header h1{
+.house{
   display: inline-block;
-  font-size: 50px;
   /*default/normalize likely affecting it's lining up with the nave links*/
   margin-left: 55px;
 }
