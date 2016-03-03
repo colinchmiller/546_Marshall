@@ -22,6 +22,10 @@ mainApp.config(['$routeProvider', function($routeProvider){
             templateUrl: 'assets/views/routes/contact.html',
             controller: 'ContactController'
           }).
+          when('/neighborhood', {
+            templateUrl: 'assets/views/routes/neighborhood.html',
+            controller: 'NeighborhoodController'
+          }).
           otherwise({
             redirectTo: 'home'
           })
@@ -45,4 +49,8 @@ mainApp.controller('TourController', ['$scope', function($scope){
 
 mainApp.controller('ContactController', ['$scope', function($scope){
   console.log("ContactController is firing!");
+}]);
+
+mainApp.controller('NeighborhoodController', ['$scope', function($scope){
+  console.log("NeighborhoodController is firing!");
 }]);
