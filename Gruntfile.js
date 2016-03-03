@@ -37,10 +37,10 @@ module.exports = function(grunt){
             },
             bootstrap: {
                 expand: true,
-                cwd: 'node_modules/bootstrap/dist/css',
+                cwd: 'node_modules',
                 src: [
-                    'bootstrap.min.css',
-                    'bootstrap.min.css.map'
+                    'bootstrap/dist/css/bootstrap.min.css',
+                    'bootstrap/dist/css/bootstrap.min.css.map'
                 ],
                 dest: 'server/public/vendors/bootstrap'
             },
@@ -51,7 +51,10 @@ module.exports = function(grunt){
                     'angular/angular.min.js',
                     'angular/angular.min.js.map',
                     'angular-route/angular-route.min.js',
-                    'angular-route/angular-route.min.js.map'
+                    'angular-route/angular-route.min.js.map',
+                    'angular-animate/angular-animate.min.js',
+                    'angular-animate/angular-animate.min.js.map',
+                    'angular-ui-bootstrap/dist/ui-bootstrap-tpls.js'
                 ],
                 dest: 'server/public/vendors'
             }
