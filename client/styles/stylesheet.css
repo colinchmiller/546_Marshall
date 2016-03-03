@@ -35,5 +35,7 @@ nav a:hover{
   padding: 20px;
 }
 body{
-  background-image: url("../images/Castle.jpeg");
+  background: url("../images/Castle.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
