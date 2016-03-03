@@ -35,6 +35,15 @@ module.exports = function(grunt){
                 src: 'normalize.css/normalize.css',
                 dest: 'server/public/vendors'
             },
+            bootstrap: {
+                expand: true,
+                cwd: 'node_modules/bootstrap/dist/css',
+                src: [
+                    'bootstrap.min.css',
+                    'bootstrap.min.css.map'
+                ],
+                dest: 'server/public/vendors/bootstrap'
+            },
             angular: {
                 expand: true,
                 cwd: 'node_modules',

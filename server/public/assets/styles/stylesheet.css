@@ -3,7 +3,6 @@ header{
 }
 .house{
   display: inline-block;
-  /*default/normalize likely affecting it's lining up with the nave links*/
   margin-left: 55px;
 }
 nav {

@@ -45,6 +45,11 @@ mainApp.controller('ArchitectController', ['$scope', function($scope){
 
 mainApp.controller('TourController', ['$scope', function($scope){
   console.log("TourController is firing!");
+  $scope.slides = [
+    {image: "https://www.fillmurray.com/200/300"},
+    {image: "https://www.fillmurray.com/200/300"},
+    {image: "https://www.fillmurray.com/200/300"}
+  ];
 }]);
 
 mainApp.controller('ContactController', ['$scope', function($scope){
