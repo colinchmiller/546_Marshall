@@ -2,16 +2,16 @@
 
 <h2>Pictures of the House</h2>
 
-<div id="slides_control">
+<div>
   <div>
-    <carousel interval="myInterval">
-      <slide ng-repeat="slide in slides" active="slide.active">
+    <uib-carousel interval="myInterval">
+      <uib-slide ng-repeat="slide in slides" active="slide.active">
         <img ng-src="{{slide.image}}">
         <div class="carousel-caption">
           <p>Test</p>
         </div>
-      </slide>
-    </carousel>
+      </uib-slide>
+    </uib-carousel>
   </div>
 </div>
 
