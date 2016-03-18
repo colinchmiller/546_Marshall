@@ -1,4 +1,4 @@
-var mainApp = angular.module('mainApp', ['ngRoute', 'ui.bootstrap']);
+var mainApp = angular.module('mainApp', ['ngRoute', 'ngAnimate', 'ui.bootstrap']);
 
 mainApp.config(['$routeProvider', function($routeProvider){
       $routeProvider.
@@ -45,12 +45,15 @@ mainApp.controller('ArchitectController', ['$scope', function($scope){
 
 mainApp.controller('TourController', ['$scope', function($scope){
   console.log("TourController is firing!");
-  $scope.myInterval = 3000;
+  $scope.myInterval = 5000;
+  $scope.noWrapSlides = false;
+  $scope.active = 0;
   $scope.slides = [
-    {image: "https://www.fillmurray.com/200/300"},
-    {image: "https://www.fillmurray.com/200/300"},
-    {image: "https://www.fillmurray.com/200/300"}
+    {image: "https://www.fillmurray.com/200/300", text: "First", id: 0},
+    {image: "https://www.fillmurray.com/200/300", text: "Second", id: 1},
+    {image: "https://www.fillmurray.com/200/300", text: "Third", id: 2}
   ];
+  var currIndex = 0;
 }]);
 
 mainApp.controller('ContactController', ['$scope', function($scope){
