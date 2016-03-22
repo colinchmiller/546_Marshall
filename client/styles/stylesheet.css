@@ -27,7 +27,15 @@ nav a{
 }
 nav a:hover{
   color: #000000;
+  text-decoration: none;
   border: 2px solid #000000;
+}
+nav a:active{
+  color: #ffffff;
+  text-decoration: none;
+}
+nav a:visited{
+  color: #ffffff;
 }
 .wrapper{
   background-color: #ffffff;
