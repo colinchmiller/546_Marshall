@@ -1,5 +1,4 @@
 header{
-  margin: 0 20px 0 20px;
   background-color: #A6845B;
   padding: 10px;
 }
@@ -49,4 +48,10 @@ body{
   background: url("../images/Castle.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+footer, .content:after {
+  height: 150px;
+}
+footer{
+  background-color: #A6845B;
 }
